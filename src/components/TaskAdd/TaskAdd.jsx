@@ -26,7 +26,7 @@ const TaskAdd = () => {
           name: newTask,
         });
         console.log(response.data);
-        setNewTask("");
+        setNewTask(response.data);
       } catch (error) {
         console.log(error.message);
       }
