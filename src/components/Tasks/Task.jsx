@@ -17,7 +17,11 @@ const Task = () => {
     fetchTasks();
   }, []);
 
-  return <div></div>;
+  return (
+    <div>
+      {tasks && tasks.map((task, index) => <div key={index}>{task.name}</div>)}
+    </div>
+  );
 };
 
 export default Task;
